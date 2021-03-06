@@ -23,7 +23,7 @@ for(name, algorithm) in allAlgorithms :
 
     # 学習して、評価する
     clf.fit(x_train, y_train)
-    y_pred = clf.predict(x_test)
+    y_pred = clf.predict(x_valid)
     print(name,"の正解率 = " , accuracy_score(y_valid, y_pred))
   
   # WarningやExceptionの内容を表示する
